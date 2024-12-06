@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-06T09:27:29 SEČ" name="Default suite" finished-at="2024-12-06T09:27:34 SEČ" duration-ms="5209">
+  <suite started-at="2024-12-06T10:25:16 SEČ" name="Suite" finished-at="2024-12-06T10:25:21 SEČ" duration-ms="5276">
     <groups>
     </groups>
-    <test started-at="2024-12-06T09:27:29 SEČ" name="Default test" finished-at="2024-12-06T09:27:34 SEČ" duration-ms="5209">
+    <test started-at="2024-12-06T10:25:16 SEČ" name="Test" finished-at="2024-12-06T10:25:21 SEČ" duration-ms="5276">
       <class name="com.parasoft.parabank.testCases.RegisterTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.parasoft.parabank.testCases.RegisterTest@7a220c9a]" started-at="2024-12-06T09:27:29 SEČ" name="setUp" finished-at="2024-12-06T09:27:32 SEČ" duration-ms="3509" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.parasoft.parabank.testCases.RegisterTest@b4711e2]" started-at="2024-12-06T10:25:16 SEČ" name="setUp" finished-at="2024-12-06T10:25:19 SEČ" duration-ms="3621" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="test2()[pri:0, instance:com.parasoft.parabank.testCases.RegisterTest@7a220c9a]" started-at="2024-12-06T09:27:32 SEČ" name="test2" finished-at="2024-12-06T09:27:34 SEČ" duration-ms="1544" status="PASS">
+        <test-method signature="validRegistration()[pri:0, instance:com.parasoft.parabank.testCases.RegisterTest@b4711e2]" started-at="2024-12-06T10:25:19 SEČ" name="validRegistration" finished-at="2024-12-06T10:25:21 SEČ" duration-ms="1483" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.parasoft.parabank.testCases.RegisterTest@7a220c9a]" started-at="2024-12-06T09:27:34 SEČ" name="tearDown" finished-at="2024-12-06T09:27:34 SEČ" duration-ms="128" status="PASS">
+        </test-method> <!-- validRegistration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.parasoft.parabank.testCases.RegisterTest@b4711e2]" started-at="2024-12-06T10:25:21 SEČ" name="tearDown" finished-at="2024-12-06T10:25:21 SEČ" duration-ms="138" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.parasoft.parabank.testCases.RegisterTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
