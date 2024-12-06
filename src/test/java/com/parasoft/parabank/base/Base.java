@@ -1,5 +1,10 @@
 package com.parasoft.parabank.base;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -11,8 +16,21 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Base {
 	WebDriver driver;
+	Properties prop;
 	
-	public void initializeBrowserAndOpenUrl(String browserName) {
+	public Base() throws IOException {
+		Properties prop = new Properties();
+		File propFile = new File(System.getProperty("user.dir") + "./src/test/resources/testdata.properties");
+		
+		try {
+			FileInputStream fis = new FileInputStream(propFile);
+			prop.load(fis);
+		} catch (Throwable e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public WebDriver initializeBrowserAndOpenUrl(String browserName) {
 		if(browserName.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
@@ -27,6 +45,10 @@ public class Base {
 			driver = new EdgeDriver();
 		}
 		
-		driver.get("https://parabank.parasoft.com/parabank/index.htm");
+		driver.get(prop.getProperty("url"));
+		driver.manage().window().maximize();
+		
+		
+		return driver;
 	}
 }
