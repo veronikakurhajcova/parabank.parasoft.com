@@ -10,7 +10,6 @@ import org.openqa.selenium.support.PageFactory;
 public class RegisterPage {
 	public WebDriver driver;
 	Properties prop;
-	IndexPage indexpage = new IndexPage(driver);
 	
 	//RegisterForm
 	@FindBy(id="customer.firstName")
@@ -49,13 +48,16 @@ public class RegisterPage {
 	@FindBy(xpath="//input[contains(@value, 'Register')]")
 	private WebElement btnRegister;
 	
-	public RegisterPage(WebDriver driver) {
+	@FindBy(xpath="//p[contains(text(),'account')]")
+	private WebElement successfullAccountMsg;
+	
+	public RegisterPage(WebDriver driver, Properties prop) {
 		this.driver = driver;
+		this.prop=prop;
 		PageFactory.initElements(driver, this);
 	}
 	
 	public void fillRegisterForm() {
-		indexpage.registerUser();
 		txtFirstName.sendKeys(prop.getProperty("firstName"));
 		txtLastName.sendKeys(prop.getProperty("lastName"));
 		txtAddress.sendKeys(prop.getProperty("address"));
@@ -68,6 +70,11 @@ public class RegisterPage {
 		txtPassword.sendKeys(prop.getProperty("password"));
 		txtConfirmPassword.sendKeys(prop.getProperty("confirmPassword"));
 		btnRegister.click();
+	}
+	
+	public boolean isSuccessAccountMsgVisible() {
+		boolean textMsgVisible = successfullAccountMsg.isDisplayed();
+		return textMsgVisible;
 	}
 	
 	

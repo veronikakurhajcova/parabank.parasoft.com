@@ -15,12 +15,12 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Base {
-	WebDriver driver;
+	public WebDriver driver;
 	public Properties prop;
 	
 	public Base() throws IOException {
-		Properties prop = new Properties();
-		File propFile = new File(System.getProperty("user.dir") + "./src/test/resources/testdata.properties");
+		prop = new Properties();
+		File propFile = new File(System.getProperty("user.dir") + "\\src\\test\\resources\\testdata.properties");
 		
 		try {
 			FileInputStream fis = new FileInputStream(propFile);
