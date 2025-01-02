@@ -6,8 +6,9 @@
       <class name="com.parabank.parasoft.testCases.LoginTest">
         <methods>
           <include name="tearDown"/>
+          <include name="TC_02_loginWithInvalidUsername"/>
           <include name="setup"/>
-          <include name="TC_02_loginUserWithInvalidUsername"/>
+          <include name="TC_03_loginWithInvalidPassword"/>
         </methods>
       </class> <!-- com.parabank.parasoft.testCases.LoginTest -->
     </classes>

@@ -28,6 +28,9 @@ public class HomePage {
 	@FindBy(xpath="//input[@value='Log In']")
 	private WebElement loginButton;
 	
+	@FindBy(xpath="//p[@class='error' and contains(text(),'Please enter a username and password.')]")
+	private WebElement invalidLoginWithEmptyCredentialsErrorText;
+	
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -43,6 +46,11 @@ public class HomePage {
 		loginUsernameField.sendKeys(username);
 		loginPasswordField.sendKeys(password);
 		loginButton.click();
+	}
+	
+	public boolean emptyUsernameAndPasswordErrorTextIsDisplayed() {
+		boolean errorText = invalidLoginWithEmptyCredentialsErrorText.isDisplayed();
+		return errorText;
 	}
 
 	

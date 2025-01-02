@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
+<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-02T15:32:18 SEČ" name="Suite" finished-at="2025-01-02T15:32:32 SEČ" duration-ms="13238">
+  <suite started-at="2025-01-02T15:50:43 SEČ" name="Default suite" finished-at="2025-01-02T15:50:59 SEČ" duration-ms="15607">
     <groups>
     </groups>
-    <test started-at="2025-01-02T15:32:18 SEČ" name="Test" finished-at="2025-01-02T15:32:32 SEČ" duration-ms="13238">
+    <test started-at="2025-01-02T15:50:43 SEČ" name="Default test" finished-at="2025-01-02T15:50:59 SEČ" duration-ms="15607">
       <class name="com.parabank.parasoft.testCases.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.parabank.parasoft.testCases.LoginTest@71d44a3]" started-at="2025-01-02T15:32:18 SEČ" name="setup" finished-at="2025-01-02T15:32:23 SEČ" duration-ms="4187" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.parabank.parasoft.testCases.LoginTest@34123d65]" started-at="2025-01-02T15:50:43 SEČ" name="setup" finished-at="2025-01-02T15:50:47 SEČ" duration-ms="3587" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TC_01_loginWithValidCredentials()[pri:0, instance:com.parabank.parasoft.testCases.LoginTest@71d44a3]" started-at="2025-01-02T15:32:23 SEČ" name="TC_01_loginWithValidCredentials" finished-at="2025-01-02T15:32:24 SEČ" duration-ms="962" status="PASS">
+        <test-method signature="TC_01_loginWithValidCredentials()[pri:0, instance:com.parabank.parasoft.testCases.LoginTest@34123d65]" started-at="2025-01-02T15:50:47 SEČ" name="TC_01_loginWithValidCredentials" finished-at="2025-01-02T15:50:48 SEČ" duration-ms="982" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_01_loginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.parabank.parasoft.testCases.LoginTest@71d44a3]" started-at="2025-01-02T15:32:24 SEČ" name="tearDown" finished-at="2025-01-02T15:32:24 SEČ" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.parabank.parasoft.testCases.LoginTest@34123d65]" started-at="2025-01-02T15:50:48 SEČ" name="tearDown" finished-at="2025-01-02T15:50:48 SEČ" duration-ms="121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.parabank.parasoft.testCases.LoginTest@71d44a3]" started-at="2025-01-02T15:32:24 SEČ" name="setup" finished-at="2025-01-02T15:32:26 SEČ" duration-ms="2887" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.parabank.parasoft.testCases.LoginTest@34123d65]" started-at="2025-01-02T15:50:48 SEČ" name="setup" finished-at="2025-01-02T15:50:51 SEČ" duration-ms="2916" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TC_02_loginUserWithInvalidUsername()[pri:0, instance:com.parabank.parasoft.testCases.LoginTest@71d44a3]" started-at="2025-01-02T15:32:26 SEČ" name="TC_02_loginUserWithInvalidUsername" finished-at="2025-01-02T15:32:27 SEČ" duration-ms="927" status="FAIL">
+        <test-method signature="TC_02_loginWithInvalidUsername()[pri:0, instance:com.parabank.parasoft.testCases.LoginTest@34123d65]" started-at="2025-01-02T15:50:51 SEČ" name="TC_02_loginWithInvalidUsername" finished-at="2025-01-02T15:50:52 SEČ" duration-ms="944" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Account login with invalid username should fail, but it succeeded expected [false] but found [true]]]>
@@ -33,7 +33,7 @@
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1578)
 at org.testng.Assert.assertFalse(Assert.java:79)
-at com.parabank.parasoft.testCases.LoginTest.TC_02_loginUserWithInvalidUsername(LoginTest.java:39)
+at com.parabank.parasoft.testCases.LoginTest.TC_02_loginWithInvalidUsername(LoginTest.java:39)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -65,16 +65,16 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_02_loginUserWithInvalidUsername -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.parabank.parasoft.testCases.LoginTest@71d44a3]" started-at="2025-01-02T15:32:27 SEČ" name="tearDown" finished-at="2025-01-02T15:32:27 SEČ" duration-ms="0" status="PASS">
+        </test-method> <!-- TC_02_loginWithInvalidUsername -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.parabank.parasoft.testCases.LoginTest@34123d65]" started-at="2025-01-02T15:50:52 SEČ" name="tearDown" finished-at="2025-01-02T15:50:52 SEČ" duration-ms="124" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.parabank.parasoft.testCases.LoginTest@71d44a3]" started-at="2025-01-02T15:32:27 SEČ" name="setup" finished-at="2025-01-02T15:32:30 SEČ" duration-ms="2669" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.parabank.parasoft.testCases.LoginTest@34123d65]" started-at="2025-01-02T15:50:52 SEČ" name="setup" finished-at="2025-01-02T15:50:55 SEČ" duration-ms="2702" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TC_03_loginUserWithInvalidPassword()[pri:0, instance:com.parabank.parasoft.testCases.LoginTest@71d44a3]" started-at="2025-01-02T15:32:30 SEČ" name="TC_03_loginUserWithInvalidPassword" finished-at="2025-01-02T15:32:32 SEČ" duration-ms="1561" status="FAIL">
+        <test-method signature="TC_03_loginWithInvalidPassword()[pri:0, instance:com.parabank.parasoft.testCases.LoginTest@34123d65]" started-at="2025-01-02T15:50:55 SEČ" name="TC_03_loginWithInvalidPassword" finished-at="2025-01-02T15:50:56 SEČ" duration-ms="987" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Account login with invalid password should fail, but it succeeded expected [false] but found [true]]]>
@@ -84,7 +84,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1578)
 at org.testng.Assert.assertFalse(Assert.java:79)
-at com.parabank.parasoft.testCases.LoginTest.TC_03_loginUserWithInvalidPassword(LoginTest.java:45)
+at com.parabank.parasoft.testCases.LoginTest.TC_03_loginWithInvalidPassword(LoginTest.java:46)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -116,12 +116,24 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_03_loginUserWithInvalidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.parabank.parasoft.testCases.LoginTest@71d44a3]" started-at="2025-01-02T15:32:32 SEČ" name="tearDown" finished-at="2025-01-02T15:32:32 SEČ" duration-ms="0" status="PASS">
+        </test-method> <!-- TC_03_loginWithInvalidPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.parabank.parasoft.testCases.LoginTest@34123d65]" started-at="2025-01-02T15:50:56 SEČ" name="tearDown" finished-at="2025-01-02T15:50:56 SEČ" duration-ms="110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.parabank.parasoft.testCases.LoginTest@34123d65]" started-at="2025-01-02T15:50:56 SEČ" name="setup" finished-at="2025-01-02T15:50:58 SEČ" duration-ms="2469" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TC_04_loginWithEmptyCredentials()[pri:0, instance:com.parabank.parasoft.testCases.LoginTest@34123d65]" started-at="2025-01-02T15:50:58 SEČ" name="TC_04_loginWithEmptyCredentials" finished-at="2025-01-02T15:50:59 SEČ" duration-ms="521" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_04_loginWithEmptyCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.parabank.parasoft.testCases.LoginTest@34123d65]" started-at="2025-01-02T15:50:59 SEČ" name="tearDown" finished-at="2025-01-02T15:50:59 SEČ" duration-ms="108" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.parabank.parasoft.testCases.LoginTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
